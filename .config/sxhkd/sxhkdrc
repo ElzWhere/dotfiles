@@ -12,7 +12,7 @@ super + b
 
 # program launcher
 super + @space
-	$HOME/.config/rofi/launchers/type-6/launcher.sh
+	~/.config/rofi/launchers/type-6/launcher.sh
 
 # vscode
 super + c
