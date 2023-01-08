@@ -1,0 +1,12 @@
+window:
+    opacity: 0.90 #From 0.00 to 1.00
+
+font:
+    normal:
+      family: Fira Mono
+      style: Regular
+    size: 7.0
+      
+import:
+  - ~/.config/alacritty-colorscheme/themes/rza_neon.yaml
+
