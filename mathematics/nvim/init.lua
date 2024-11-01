@@ -35,6 +35,8 @@ require('lazy').setup({
    require 'plugins.autocompletion',
    require 'plugins.lsp',
    require 'plugins.avante',
+   require 'plugins.fugitive',
+   require 'plugins.which-key',
 })
 
 -- Function to apply transparency settings globally
@@ -72,4 +74,3 @@ vim.api.nvim_create_autocmd("BufEnter", {
 pattern = "*",
 callback = set_transparency,
 })
-
