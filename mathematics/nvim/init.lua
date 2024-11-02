@@ -35,6 +35,7 @@ require('lazy').setup({
    require 'plugins.autocompletion',
    require 'plugins.lsp',
    require 'plugins.avante',
+   require 'plugins.lazygit',
    require 'plugins.fugitive',
    require 'plugins.which-key',
 })
