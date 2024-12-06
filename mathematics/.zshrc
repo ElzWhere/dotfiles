@@ -12,7 +12,7 @@ export STARSHIP_CONFIG=~/.config/starship/starship.toml
 #fi
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 #source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # Path to your Oh My Zsh installation.
@@ -133,6 +133,7 @@ alias lst="eza --tree --level 2"
 alias k="kubectl"
 #eval $(thefuck --alias)
 
+alias vim=nvim
 
 # Useful git aliases
 alias g="git"
@@ -160,6 +161,10 @@ alias gtag="git tag"
 alias gshow="git show"
 alias ghpr="gh pr create -a @me -l"
 
+# Where should I put you?
+bindkey -s ^f "tmux-sessionizer\n"
+
+
 
 
 
@@ -167,7 +172,7 @@ alias ghpr="gh pr create -a @me -l"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-export EDITOR="code -w"
+export EDITOR="nvim"
 
 #source ~/.cloudflare
 
@@ -185,3 +190,6 @@ if [ -f '/Users/mathematics/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/mathematics/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mathematics/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
+. "$HOME/.cargo/env"
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"

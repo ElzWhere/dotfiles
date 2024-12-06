@@ -38,6 +38,8 @@ require('lazy').setup({
    require 'plugins.lazygit',
    require 'plugins.fugitive',
    require 'plugins.which-key',
+   require 'plugins.gonvim',
+--   require 'plugins.rustaceannvim',
 })
 
 -- Function to apply transparency settings globally
@@ -74,4 +76,17 @@ window = {
 vim.api.nvim_create_autocmd("BufEnter", {
 pattern = "*",
 callback = set_transparency,
+})
+
+
+-- Run gofmt and goimports on save 
+-- Run gofmt + goimports on save
+
+local format_sync_grp = vim.api.nvim_create_augroup("goimports", {})
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = "*.go",
+  callback = function()
+   require('go.format').goimports()
+  end,
+  group = format_sync_grp,
 })
