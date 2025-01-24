@@ -1,0 +1,46 @@
+# Darkula colors
+[colors]
+selection-foreground = '#000000'
+selection-backround = '#b5d5ff'
+background       = '#000000'
+
+
+black            = '#000000'
+blue             = '#5555ff'
+cursor           = '#bbbbbb'
+foreground       = '#F8F8F2'
+magenta          = '#ff55ff'
+red              = '#FF5555'
+tabs             = '#494c62'
+tabs-active      = '#6a6e8e'
+white            = '#F8F8F2'
+dim-black        = '#393C4b'
+dim-blue         = '#AE7BF8'
+dim-foreground   = '#dfdfd9'
+dim-green        = '#06572F'
+dim-magenta      = '#FF60BB'
+dim-white        = '#EFEFE1'
+light-black      = '#6272A4'
+light-blue       = '#D6ACFF'
+light-cyan       = '#A4FFFF'
+light-foreground = '#f8f8f1'
+light-green      = '#69FF94'
+light-magenta    = '#FF55FF'
+light-red        = '#FF6E6E'
+light-white      = '#FFFFFF'
+light-yellow     = '#FFFFA5'
+
+# ~/.config/rio/themes/dark_elz.toml
+
+# Regular colors
+cyan = '#56b6c2'
+green = "#98c379"
+#tabs = ""
+#white = ""
+yellow = "#e5c07b"
+
+dim-cyan = "#2b6f77"
+dim-red = "#993939"
+dim-yellow = "#93691d"
+
+#
